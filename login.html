@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="practicecss.css">
+    <title>RedStore</title>
+</head>
+
+<body>
+    <!---header--->
+    <div class="headac">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" width="175px">
+                </div>
+                <nav>
+                    <ul id="menu1">
+                        <li><a href="practice1.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#home">About</a></li>
+                        <li><a href="#home">Contact</a></li>
+                        <li><a href="login.html">Account</a></li>
+
+                    </ul>
+
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img class="menu1" onclick="toggle()" src="images/menu.png" width="30px" height="30px">
+
+            </div>
+
+        </div>
+    </div>
+    <!---header--->
+
+    <div class="accpage">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/image1.png" width="100%">
+                </div>
+                <div class="col1">
+                    <div class="box">
+                       <div class="f-btn">
+                           <span onclick="log()">Login</span>
+                           <span onclick="sign()">Register</span>
+                           <hr id="in">
+                       </div>
+                       <form action="" id="Login">
+                           <input type="text" placeholder="Username">
+                           <input type="password" placeholder="Password">
+                           <button type="submit" class="btn">Login</button>
+                           <a href="">Forget Password</a>
+                
+                          
+                       </form>
+
+                       <form action="" id="Sig">
+                           <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                           <input type="password" placeholder="Password">
+                           <button type="submit" class="btn">Singup</button>
+                           
+                
+                          
+                       </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---feature products--->
+
+
+    <!---footer--->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="fcol1">
+                    <h3>Download Our APP</h3>
+                    <p>Download APP for andriod and ios mobile phones.</p>
+                    <div class="applogo">
+                        <img src="images/play-store.png" alt="">
+
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="fcol2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure
+                        and Benefits of Sports Accesible to the Many.
+                    </p>
+                </div>
+                <div class="fcol3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs</li>
+                        <li>Return Policy</li>
+                        <li>Affiliates</li>
+                    </ul>
+                </div>
+                <div class="fcol4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>FaceBook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copy">Copyright 2021 - Sarth Goud</p>
+        </div>
+    </div>
+    <!---footer--->
+
+    <script>
+        var m = document.getElementById("menu1");
+        m.style.maxHeight = "0px";
+        function toggle() {
+            if (m.style.maxHeight == "0px") {
+                m.style.maxHeight = "210px";
+                m.style.zIndex = "1";
+            }
+            else {
+                m.style.maxHeight = "0px";
+            }
+        }
+
+
+        var login = document.getElementById("Login");
+        var Signup = document.getElementById("Sig");
+
+        var In = document.getElementById("in");
+
+        function log(){
+            login.style.transform = "translateX(300px)";
+            Signup.style.transform = "translateX(300px)";
+            In.style.transform = "translateX(0px)";
+        }
+        function sign(){
+            login.style.transform = "translateX(0px)";
+            Signup.style.transform = "translateX(0px)";
+            In.style.transform = "translateX(100px)";
+        }
+  </script>
+</body>
+
+</html>
